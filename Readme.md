@@ -23,6 +23,12 @@ docker-compose run web rails new . --force --no-deps
 ````
 
 ## Quarto passo 
+Adicione as seguintes gemas no arquivo Gemfile (não o Gemfile.lock)
+
+````
+docker-compose build
+````
+
 Construa a imagem do container docker
 
 ````
@@ -35,10 +41,15 @@ Inicie a execução do container
 ````
 docker-compose up
 ````
-
 ## Observação
-Para executar comandos no container digite
+Para executar comandos específicos dentro do container, execute o seguinte comando: 
 
 ````
-docker-compose web exec "comando"
+docker-compose exec web comando
+````
+
+Por exemplo:
+
+````
+docker-compose exec web rake routes
 ````
