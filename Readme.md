@@ -48,6 +48,24 @@ Inicie a execução do container
 ````
 docker-compose up
 ````
+
+## Sexto passo 
+Execute os comandos (em outro terminal, ou seja, não feche o terminal que está rodando o programa do docker)
+
+````
+docker-compose exec web rails generate rspec:install
+docker-compose exec web rails generate cucumber:install
+````
+
+## Sétimo passo 
+Para validar se tudo foi executado corretamente, teste os seguintes comandos:
+
+````
+docker-compose exec web rake spec
+docker-compose exec web rake cucumber
+````
+
+
 ## Observação
 Para executar comandos específicos dentro do container, execute o seguinte comando: 
 
@@ -60,3 +78,7 @@ Por exemplo:
 ````
 docker-compose exec web rake routes
 ````
+
+# Para dúvidas
+
+Por favor, em caso de dúvidas postar no fórum online do e-disciplinas
