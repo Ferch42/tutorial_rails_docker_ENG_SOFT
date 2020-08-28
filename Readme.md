@@ -79,6 +79,9 @@ Por exemplo:
 docker-compose exec web rake routes
 ````
 
+## POSSÍVEIS ERROS 
+É possível que o git mude as quebras de linha de Linux para Windows, o que ocasionará um erro ao seguir o tutorial. Neste caso, certifique-se de que TODOS os arquivos utilizados utilizem a terminação de linha LF em vez de CRLF.
+
 # Para dúvidas
 
 Por favor, em caso de dúvidas postar no fórum online do e-disciplinas
