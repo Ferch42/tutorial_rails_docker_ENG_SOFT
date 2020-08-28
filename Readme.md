@@ -26,7 +26,14 @@ docker-compose run web rails new . --force --no-deps
 Adicione as seguintes gemas no arquivo Gemfile (não o Gemfile.lock)
 
 ````
-docker-compose build
+group :development, :test do
+  gem 'rspec-rails', '~> 4.0.1'
+  gem 'jasmine'
+  gem 'coveralls', require: false  
+  gem 'cucumber-rails', require: false
+  # database_cleaner is not mandatory, but highly recommended
+  gem 'database_cleaner'
+end
 ````
 
 Construa a imagem do container docker
