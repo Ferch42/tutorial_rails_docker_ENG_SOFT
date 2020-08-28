@@ -52,7 +52,7 @@ docker-compose up
 ````
 
 ## Sexto passo 
-Execute os comandos (em outro terminal, ou seja, não feche o terminal que está rodando o programa do docker)
+Execute os comandos, dentro do mesmo diretório do projeto (em outro terminal, ou seja, não feche o terminal que está rodando o programa do docker)
 
 ````
 docker-compose exec web rails generate rspec:install
